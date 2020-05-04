@@ -1,0 +1,46 @@
+.title-play {
+    position: absolute;
+    bottom: 160px;
+    left: 230px;
+    font-size: 4em;
+    text-align: center;
+    animation: example 1s infinite;
+}
+
+@keyframes example {
+    0% {
+        color: darkblue;
+        text-shadow: 0 0 20px blue
+    }
+    25% {
+        color: blue;
+        text-shadow: 2px 2px 2px darkblue;
+        transform: translate(-2px, 1px)
+    }
+    40% {
+        color: darkblue;
+        text-shadow: none;
+        transform: translate(0, 0)
+    }
+    50% {
+        color: blue;
+        text-shadow: 5px 5px 2px blue, -5px -5px 2px red;
+        transform: translate(0px, 5px)
+    }
+    70% {
+        color: darkblue;
+        text-shadow: none;
+        transform: translate(0, 0)
+    }
+    80% {
+        color: darkblue;
+        text-shadow: 0 0 20px blue;
+        transform: translate(-2px, 1px)
+    }
+    100% {
+        color: darkblue;
+        text-shadow: none;
+    }
+}
+
+Après avoir découvert le métier de développeur, j'ai toujours été motivé par le fait de coder, aider et accéder au besoin du client car je trouve ce milieu très passionnant. Le fait de pouvoir créer à partir de rien et de continuer à apprendre tout au long de ma carrière m'a toujours interessé.

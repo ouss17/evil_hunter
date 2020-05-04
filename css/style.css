@@ -1,0 +1,161 @@
+.game {
+    width: 900px;
+    height: 500px;
+    overflow: hidden;
+    position: absolute;
+    top: 200px;
+    left: 480px;
+}
+
+h1.title.title-level {
+    position: absolute;
+    left: 380px;
+    bottom: 430px;
+}
+
+.title-game {
+    position: absolute;
+    bottom: 430px;
+}
+
+#myCanvas {
+    /* background: url('../ressources/background/background_prenight.jpg'); */
+    background-size: cover;
+}
+
+#mc {
+    width: 50px;
+    position: absolute;
+    bottom: 58px;
+    left: 15px;
+}
+
+#skate {
+    width: 60px;
+    position: absolute;
+    bottom: 36px;
+    left: 15px;
+}
+
+#sword {
+    width: 50px;
+    position: sticky;
+    bottom: 57px;
+    left: 15px;
+    transform: rotate(45deg);
+}
+
+.animation {
+    animation: bounce 1s ease alternate;
+}
+
+.sword-animation {
+    animation: attk 250ms ease;
+}
+
+#start-game {
+    background-color: #29B6F6;
+    border-radius: 4px;
+    position: absolute;
+    top: 120px;
+    left: 280px;
+    color: white;
+    font-size: 50px;
+    padding: 8px;
+    box-shadow: 0 10px 6px -6px #777;
+    animation: flash 1s ease infinite;
+    cursor: pointer;
+    transition: all 2s;
+}
+
+.instructions {
+    position: absolute;
+    left: 310px;
+    top: 270px;
+    transition: all 2s;
+}
+
+.instructions img {
+    width: 60px;
+}
+
+div#instructions {
+    word-spacing: 15px;
+    color: white;
+}
+
+#game-over {
+    position: absolute;
+    bottom: 160px;
+    left: 230px;
+    font-size: 4em;
+    text-align: center;
+    animation: example 1s infinite;
+}
+
+@keyframes flash {
+    0%, 50%, 100% {
+        opacity: 1;
+    }
+    25%, 75% {
+        background-color: #D32F2F;
+        opacity: 0.3;
+    }
+}
+
+@keyframes bounce {
+    from {
+        bottom: 60px;
+    }
+    50% {
+        bottom: 130px;
+    }
+    to {
+        bottom: 60px;
+    }
+}
+
+@keyframes attk {
+    from {
+        transform: rotate(-45deg);
+    }
+    to {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes example {
+    0% {
+        color: darkblue;
+        text-shadow: 0 0 20px blue
+    }
+    25% {
+        color: blue;
+        text-shadow: 2px 2px 2px darkblue;
+        transform: translate(-2px, 1px)
+    }
+    40% {
+        color: darkblue;
+        text-shadow: none;
+        transform: translate(0, 0)
+    }
+    50% {
+        color: blue;
+        text-shadow: 5px 5px 2px blue, -5px -5px 2px red;
+        transform: translate(0px, 5px)
+    }
+    70% {
+        color: darkblue;
+        text-shadow: none;
+        transform: translate(0, 0)
+    }
+    80% {
+        color: darkblue;
+        text-shadow: 0 0 20px blue;
+        transform: translate(-2px, 1px)
+    }
+    100% {
+        color: darkblue;
+        text-shadow: none;
+    }
+}
